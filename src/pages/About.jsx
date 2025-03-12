@@ -7,7 +7,7 @@ function About() {
     <main>
       <Header />
       <section>
-        <h2>About Me</h2>
+        <h2>About Me!</h2>
         {/* ...about content... */}
       </section>
       <Footer />
