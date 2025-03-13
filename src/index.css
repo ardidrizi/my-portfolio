@@ -1,3 +1,4 @@
+@import "tailwindcss";
 
 @media (min-width: 768px) {
   .hamburger {
