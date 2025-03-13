@@ -14,21 +14,21 @@ function Navbar() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav >
-      <div >
+    <nav className="bg-gray-800 p-4 text-white">
+      <div className="flex justify-between items-center">
         {/* ...existing logo or brand... */}
-        <button  onClick={toggleMenu}>
-          <span ></span>
-          <span ></span>
-          <span ></span>
+        <button className="md:hidden focus:outline-none" onClick={toggleMenu}>
+          <span className="block h-1 w-6 bg-white mb-1"></span>
+          <span className="block h-1 w-6 bg-white mb-1"></span>
+          <span className="block h-1 w-6 bg-white"></span>
         </button>
       </div>
-      <ul >
+      <ul className={`mt-4 ${isOpen ? "block" : "hidden"} md:flex space-x-4`}>
         {navLinks.map((link, index) => (
-          <li key={index} >
+          <li key={index}>
             <NavLink
               to={link.path}
-              className={({ isActive }) => isActive ? 'active-link' : ''}
+              className={({ isActive }) => isActive ? 'underline text-gray-300' : 'hover:underline'}
             >
               {link.title}
             </NavLink>
