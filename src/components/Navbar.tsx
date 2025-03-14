@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
-const navLinks = [
+interface NavLinkItem {
+  title: string;
+  path: string;
+}
+
+const navLinks: NavLinkItem[] = [
   { title: "Home", path: "/" },
   { title: "About", path: "/about" },
   { title: "Projects", path: "/projects" },
@@ -9,12 +14,12 @@ const navLinks = [
   { title: "Blog", path: "/blog" },
 ];
 
-function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+const Navbar: React.FC = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="bg-gray-800 p-4 text-white">
+    <nav className="bg-teal-800 p-4 text-white">
       <div className="flex justify-between items-center">
         {/* ...existing logo or brand... */}
         <button className="md:hidden focus:outline-none" onClick={toggleMenu}>
@@ -28,7 +33,11 @@ function Navbar() {
           <li key={index}>
             <NavLink
               to={link.path}
-              className={({ isActive }) => isActive ? 'underline text-gray-300' : 'hover:underline'}
+              className={({ isActive }) =>
+                isActive
+                  ? 'bg-gradient-to-r from-teal-500 via-teal-600 to-teal-700 text-white px-3 py-1 rounded'
+                  : 'text-white hover:bg-teal-700 px-3 py-1 rounded'
+              }
             >
               {link.title}
             </NavLink>

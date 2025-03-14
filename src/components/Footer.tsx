@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-function Footer() {
+const Footer: FC = () => {
   return (
     <footer>
       <p>© {new Date().getFullYear()} My Portfolio.</p>
@@ -18,6 +18,6 @@ function Footer() {
       </ul>
     </footer>
   );
-}
+};
 
 export default Footer;
