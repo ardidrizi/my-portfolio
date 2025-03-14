@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar';
 
-function Header() {
+const Header: React.FC = () => {
   return (
     <header>
       <Navbar />
