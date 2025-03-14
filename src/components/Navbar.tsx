@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
               className={({ isActive }) =>
                 isActive
                   ? 'bg-gradient-to-r from-teal-500 via-teal-600 to-teal-700 text-white px-3 py-1 rounded'
-                  : 'text-white hover:bg-teal-700 px-3 py-1 rounded'
+                  : 'text-white hover:bg-teal-700 text-white px-3 py-1 rounded'
               }
             >
               {link.title}
