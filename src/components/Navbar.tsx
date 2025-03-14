@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
     <nav className="bg-teal-800 p-4 text-white">
       <div className="flex justify-between items-center">
         {/* ...existing logo or brand... */}
-        <button className="md:hidden focus:outline-none" onClick={toggleMenu}>
+        <button className="md:hidden focus:outline-none" onClick={toggleMenu} aria-label="Toggle navigation">
           <span className="block h-1 w-6 bg-white mb-1"></span>
           <span className="block h-1 w-6 bg-white mb-1"></span>
           <span className="block h-1 w-6 bg-white"></span>
@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
               className={({ isActive }) =>
                 isActive
                   ? 'bg-gradient-to-r from-teal-500 via-teal-600 to-teal-700 text-white px-3 py-1 rounded'
-                  : 'text-white hover:bg-teal-700 px-3 py-1 rounded'
+                  : 'text-white hover:bg-teal-700 text-white px-3 py-1 rounded'
               }
             >
               {link.title}

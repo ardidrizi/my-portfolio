@@ -8,7 +8,3 @@ header, footer, .card {
 	background-color: #fafafa; /* light paper-like background */
 	border: 1px solid #e0e0e0; /* subtle border */
 }
-
-a {
-	color: #0066cc; /* simple accent color */
-}
