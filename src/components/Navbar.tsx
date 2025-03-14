@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
     <nav className="bg-teal-800 p-4 text-white">
       <div className="flex justify-between items-center">
         {/* ...existing logo or brand... */}
-        <button className="md:hidden focus:outline-none" onClick={toggleMenu}>
+        <button className="md:hidden focus:outline-none" onClick={toggleMenu} aria-label="Toggle navigation">
           <span className="block h-1 w-6 bg-white mb-1"></span>
           <span className="block h-1 w-6 bg-white mb-1"></span>
           <span className="block h-1 w-6 bg-white"></span>

@@ -17,7 +17,7 @@ function Home() {
       >
         <div className="hero-content flex flex-col items-center justify-center h-screen">
           <h2 className="text-5xl font-bold">Welcome to My Portfolio!</h2>
-          <p className="mt-4 text-xl">I`am Ardian Idrizi a Fullstack Developer</p>
+          <p className="mt-4 text-xl">I'm Ardian Idrizi, a Fullstack Developer</p>
           <div className="mt-8">
             <Link to="/projects" className="bg-white text-teal-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200">
               Explore Projects
