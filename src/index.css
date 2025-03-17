@@ -4,6 +4,91 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Theme Variables */
+:root {
+  --primary-color: #3b82f6;
+  --secondary-color: #10b981;
+  --text-color: #333333;
+  --background-color: #ffffff;
+  --accent-color: #8b5cf6;
+  --transition-speed: 0.3s;
+}
+
+/* Theme Classes */
+.theme-light {
+  --primary-color: #3b82f6;
+  --secondary-color: #10b981;
+  --text-color: #333333;
+  --background-color: #ffffff;
+  --accent-color: #8b5cf6;
+}
+
+.theme-dark {
+  --primary-color: #60a5fa;
+  --secondary-color: #34d399;
+  --text-color: #f3f4f6;
+  --background-color: #1f2937;
+  --accent-color: #a78bfa;
+}
+
+.theme-neon {
+  --primary-color: #f0f;
+  --secondary-color: #0ff;
+  --text-color: #fff;
+  --background-color: #121212;
+  --accent-color: #ff0;
+  --transition-speed: 0.5s;
+}
+
+.theme-minimalist {
+  --primary-color: #000;
+  --secondary-color: #555;
+  --text-color: #222;
+  --background-color: #f9f9f9;
+  --accent-color: #777;
+}
+
+.theme-retro {
+  --primary-color: #cc5500;
+  --secondary-color: #8a9a5b;
+  --text-color: #3b2e1e;
+  --background-color: #f8ecd4;
+  --accent-color: #964b00;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+a, button {
+  color: var(--primary-color);
+  transition: color var(--transition-speed);
+}
+
+a:hover, button:hover {
+  color: var(--accent-color);
+}
+
+/* New classes for themed elements */
+/* .hero-section {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+} */
+
+.primary-button {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+.primary-button:hover {
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+}
+
 @media (min-width: 768px) {
   .hamburger {
     display: none;
