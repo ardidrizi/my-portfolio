@@ -10,7 +10,7 @@ function Home() {
     <main>
       <Header />
       <MotionSection
-        className="bg-gradient-to-r from-blue-500 via-indigo-500 to-violet-600 text-white p-8"
+        className="hero-section p-8"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
@@ -19,7 +19,7 @@ function Home() {
           <h2 className="text-5xl font-bold">Welcome to My Portfolio!</h2>
           <p className="mt-4 text-xl">I'm Ardian Idrizi, a Fullstack Developer</p>
           <div className="mt-8">
-            <Link to="/projects" className="bg-white text-teal-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200">
+            <Link to="/projects" className="primary-button px-6 py-3 rounded-lg font-semibold transition-colors">
               Explore Projects
             </Link>
           </div>
