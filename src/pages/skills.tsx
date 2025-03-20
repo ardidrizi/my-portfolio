@@ -1,5 +1,6 @@
 import React from 'react';
 import SkillTree from '../components/SkillTree';
+import SkillsGalaxy from '../components/SkillsGalaxy';
 
 const SkillsPage = () => {
   // Example skills data
@@ -29,9 +30,10 @@ const SkillsPage = () => {
   ];
 
   return (
-    <div className="skills-page">
+    <div >
       <h1>My Skills</h1>
-      <SkillTree skills={skills} />
+      <SkillsGalaxy skills={skills}/>
+      {/* <SkillTree skills={skills} /> */}
     </div>
   );
 };

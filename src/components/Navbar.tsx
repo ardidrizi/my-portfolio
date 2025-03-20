@@ -12,6 +12,8 @@ const navLinks: NavLinkItem[] = [
   { title: "Projects", path: "/projects" },
   { title: "Contact", path: "/contact" },
   { title: "Blog", path: "/blog" },
+  { title: "Skills", path: "/skills" },
+
 ];
 
 const Navbar: React.FC = () => {
