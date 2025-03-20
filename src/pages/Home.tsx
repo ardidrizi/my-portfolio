@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Header from '../components/Header';
 import { motion, MotionProps } from 'framer-motion';
+import Header from '../components/Header'; // Adjust the path as needed
 
 const MotionSection = motion.section as React.FC<React.HTMLAttributes<HTMLElement> & MotionProps>;
 

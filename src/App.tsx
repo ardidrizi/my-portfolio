@@ -9,6 +9,7 @@ import SkillsPage from "./pages/skills"
 import React from 'react';
 import { ThemeProvider } from './components/ThemeController';
 import InteractiveBackground from './components/InteractiveBackground';
+import Layout from './components/Layout';
 
 const App: React.FC = () => {
 	return (
@@ -16,12 +17,12 @@ const App: React.FC = () => {
 			<InteractiveBackground />
 			<BrowserRouter>
 					<Routes>
-						<Route path="/" element={<Home />} />
-						<Route path="/about" element={<About />} />
-						<Route path="/projects" element={<Projects />} />
-						<Route path="/contact" element={<Contact />} />
-						<Route path="/blog" element={<Blog />} />
-						<Route path="/skills" element={<SkillsPage />} />
+						<Route path="/" element={<Layout><Home /></Layout>} />
+						<Route path="/about" element={<Layout><About /></Layout>} />
+						<Route path="/projects" element={<Layout><Projects /></Layout>} />
+						<Route path="/contact" element={<Layout><Contact /></Layout>} />
+						<Route path="/blog" element={<Layout><Blog /></Layout>} />
+						<Route path="/skills" element={<Layout><SkillsPage /></Layout>} />
 					</Routes>
 			</BrowserRouter>
 		</ThemeProvider>
