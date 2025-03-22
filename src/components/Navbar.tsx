@@ -8,12 +8,12 @@ interface NavLinkItem {
 
 const navLinks: NavLinkItem[] = [
   { title: "Home", path: "/" },
+  { title: "Traditional", path: "/traditional" },
   { title: "About", path: "/about" },
   { title: "Projects", path: "/projects" },
   { title: "Contact", path: "/contact" },
   { title: "Blog", path: "/blog" },
   { title: "Skills", path: "/skills" },
-
 ];
 
 const Navbar: React.FC = () => {

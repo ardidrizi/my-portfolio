@@ -21,7 +21,7 @@ function Projects() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.5 }}
       >
-        <GitHubProjects username={gitHubUsername} limit={9} />
+        <GitHubProjects username={gitHubUsername} limit={12} />
       </motion.div>
     </div>
   );

@@ -1,0 +1,115 @@
+/* Import fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+/*
+Font family scheme:
+- 'Poppins': Modern, clean font for headings and titles
+- 'Inter': Highly readable font for body text
+- 'Fira Code': Monospace font for code snippets
+- 'Playfair Display': Elegant serif font for special sections or quotes
+*/
+
+:root {
+  /* Font family variables */
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-code: 'Fira Code', monospace;
+  --font-accent: 'Playfair Display', serif;
+
+  /* Font weight variables */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* Line height variables */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.7;
+
+  /* Letter spacing */
+  --letter-spacing-tight: -0.025em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.025em;
+}
+
+/* Theme-specific font adjustments */
+.theme-dark {
+  --font-weight-regular: 300; /* Slightly lighter for better readability on dark backgrounds */
+}
+
+.theme-neon {
+  --letter-spacing-normal: 0.01em; /* Slightly more spaced for neon theme */
+}
+
+.theme-minimalist {
+  --font-heading: 'Inter', sans-serif; /* Use same font for minimalist theme */
+  --line-height-normal: 1.6; /* More spacing for minimalist theme */
+}
+
+/* Font utility classes */
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+.font-code {
+  font-family: var(--font-code);
+}
+
+.font-accent {
+  font-family: var(--font-accent);
+}
+
+.font-light {
+  font-weight: var(--font-weight-light);
+}
+
+.font-regular {
+  font-weight: var(--font-weight-regular);
+}
+
+.font-medium {
+  font-weight: var(--font-weight-medium);
+}
+
+.font-semibold {
+  font-weight: var(--font-weight-semibold);
+}
+
+.font-bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.font-extrabold {
+  font-weight: var(--font-weight-extrabold);
+}
+
+.line-height-tight {
+  line-height: var(--line-height-tight);
+}
+
+.line-height-normal {
+  line-height: var(--line-height-normal);
+}
+
+.line-height-relaxed {
+  line-height: var(--line-height-relaxed);
+}
+
+.letter-spacing-tight {
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+.letter-spacing-normal {
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+.letter-spacing-wide {
+  letter-spacing: var(--letter-spacing-wide);
+}
