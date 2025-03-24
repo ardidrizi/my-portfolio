@@ -115,13 +115,14 @@ const SkillsList = styled.ul`
   }
 `;
 
-const SkillItem = styled.li<{ isSelected: boolean }>`
+// Fix: Instead of passing isSelected directly to the li element, use a data attribute
+const SkillItem = styled.li<{ $isSelected: boolean }>`
   padding: 8px 12px;
   margin-bottom: 5px;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.2s ease;
-  background-color: ${props => props.isSelected ? 'rgba(59, 130, 246, 0.3)' : 'transparent'};
+  background-color: ${props => props.$isSelected ? 'rgba(59, 130, 246, 0.3)' : 'transparent'};
 
   &:hover {
     background-color: rgba(59, 130, 246, 0.2);
@@ -428,7 +429,7 @@ const SkillsGalaxy: React.FC<SkillsGalaxyProps> = ({ skills }) => {
           {skills.map((skill, index) => (
             <SkillItem
               key={index}
-              isSelected={selectedSkill?.name === skill.name}
+              $isSelected={selectedSkill?.name === skill.name}
               onClick={() => handleSkillSelect(skill)}
             >
               {skill.name}
